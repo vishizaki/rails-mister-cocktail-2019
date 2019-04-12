@@ -1,0 +1,12 @@
+<div class="navbar-wagon">
+  <!-- Logo -->
+  <a href="/" class="navbar-wagon-brand">
+    Mister Cocktail
+  </a>
+
+  <!-- Right Navigation -->
+  <div class="navbar-wagon-right hidden-xs hidden-sm">
+    <a data-toggle="modal" data-target="#modal_new" style="color:white">Create a new cocktail</a>
+    <%= render partial: 'modal_new', locals: { cocktail: @cocktail } %>
+  </div>
+</div>

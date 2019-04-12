@@ -1,0 +1,11 @@
+<div class="modal" id="modal_new" >
+  <div class="new_modal_container">
+    <div class="new_modal_body">
+    <h2 style="color:white">Create your cocktail</h2>
+      <%= simple_form_for cocktail do |f| %>
+        <%= f.input :name %>
+        <%= f.button :submit, class: 'btn btn-primary'  %>
+      <% end %>
+    </div>
+  </div>
+</div>
