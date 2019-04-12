@@ -4,7 +4,10 @@
     <h2 style="color:white">Create your cocktail</h2>
       <%= simple_form_for cocktail do |f| %>
         <%= f.input :name %>
-        <%= f.button :submit, class: 'btn btn-primary'  %>
+        <%= f.input :photo %>
+        <%= f.input :photo_cache, as: :hidden%>
+        <br>
+        <%= f.button :submit, class: 'btn'  %>
       <% end %>
     </div>
   </div>
